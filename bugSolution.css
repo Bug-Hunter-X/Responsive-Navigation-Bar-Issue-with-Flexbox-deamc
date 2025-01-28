@@ -1,0 +1,15 @@
+The issue stems from the lack of specifying `flex-basis` property in the `.nav-item` class.  Adding `flex-basis: 0` will ensure that the items' flex-grow property works correctly and items will distribute evenly.  Additionally, setting `width: auto` can sometimes help avoid unexpected behavior.
+
+Here's the corrected CSS:
+
+```css
+.nav {
+  display: flex;
+}
+.nav-item {
+  flex: 1;
+  flex-basis: 0;
+  width: auto;
+}
+```
+This revised CSS ensures that each navigation item takes up an equal proportion of the available space, fixing the vertical stacking issue.
