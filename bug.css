@@ -1,0 +1,10 @@
+The following CSS code snippet intends to create a responsive layout using flexbox, but it does not work as expected. The navigation bar elements do not distribute evenly across the screen, instead they stack vertically. 
+
+```css
+.nav {
+  display: flex;
+}
+.nav-item {
+  flex: 1;
+}
+```
